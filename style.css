@@ -823,13 +823,6 @@ body.view-control-buttons .viewControlButton {
   display: block;
 }
 
-/* Hide controls when width is too small */
-@media (max-width: 600px) {
-  body.view-control-buttons .viewControlButton {
-    display: none;
-  }
-}
-
 .viewControlButton .icon {
   position: absolute;
   top: 5px;
@@ -856,4 +849,20 @@ body.view-control-buttons .viewControlButton {
 }
 .viewControlButton-6 {
   margin-left: 105px;
+}
+
+/* Hide controls when width is too small */
+@media (max-width: 600px) {
+  body.view-control-buttons .viewControlButton-1,
+  body.view-control-buttons .viewControlButton-2,
+  body.view-control-buttons .viewControlButton-3,
+  body.view-control-buttons .viewControlButton-4 {
+    display: none;
+  }
+  .viewControlButton-5 {
+    margin-left: -45px;
+  }
+  .viewControlButton-6 {
+    margin-left: 5px;
+  }
 }
